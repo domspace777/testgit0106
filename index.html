@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+    <style>
+      .intro {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- các thẻ thông dụng
+      1. p, h1-h6 + div+ img, a+ ul ol li + table, form
+      2. semantic: 
+        - header: tiêu đề trên trang hoặc tiêu đề 1 phần riêng
+        - nav: điều hướng
+        - chân trang: contact, sdt, bản quyền,...
+        - main: nội dung chính của trang
+        - section: nhóm các nội dung có liên quan
+        - aside: phần phụ bên cạnh -> chứa thông tin bổ sung, menu bên, quảng cáo
+        - article: 1 phần nội dung độc lập, có thể tái sử dụng độc lập -> bài viết, blog, nội dung độc lập -> main: nội dung chính của trang, thường xuất hiện 1 lần
+     -->
+    <!-- CSS
+    1. CSS: ngôn ngữ tìm và tạo kiểu cho các phần tử được tạo ra bởi ngôn ngữ đánh dấu
+    2. 3 cách sử dụng css
+    3. selector: 1 phần của bộ quy tắc css, sd để xác định phần tử muốn tạo kiểu
+    4. các loại css selector:
+    - cơ bản: 
+    + element, id, class, *
+    - kết hợp:
+    + .iphone .ip12
+    + cha > con
+    + .nam.dabanh
+    + anh + em
+    + anh ~ em
+    - pseudo class: a:hover 
+    - pseudo element: div::after
+    - attribute: a[target]
+      = 
+      ~=
+      |=
+      *=
+      ^= $=
+    5. id va class
+    - giong: deu la bo chon
+    - khac
+      1 pt 
+      1 class 1d
+      . #
+      id co do uu tien ghi de cao hon class
+    6. do ưu tien
+    - !important
+    - inline style
+    - id 
+    - class, pseudo class
+    - e
+    - *
+    7. box model
+    8. relative, absolute, fixed, sticky
+    9. thuoc tinh css
+     - text: text-align (center/left/right), color, text-decoration, text-transform
+     - box model: margin, padding, border, height, width
+     - background, image: background-color, background-image: url(), background-size:cover,background-repreat:no-repeat
+     - typography:  font-size,font-family, font-weight, line-height
+     - position, layout: position, display, float, clear, z-index
+     - effect, transition: opacity, box-shadow, transition, animation
+
+  -->
+    <!-- layout
+    1. float: float, clearfix
+    2. flex
+    3. grid
+   -->
+    <!-- 
+    - 10 tp khi tk web
+      typ,color,
+      compo,  ux
+      shadow, border wspace
+      img,icon, visual
+    - 7 web personality: 
+    -->
+    <h1 class="title">Float</h1>
+    <div class="float-container">
+      <div class="float-item">
+        <h1>Item</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          culpa quo ratione voluptate doloremque cum! Error magnam quos vel
+          provident ex ratione, quas tempora, architecto magni aperiam vitae
+          voluptatem explicabo consectetur ipsa quia deleniti dolores
+          dignissimos amet? Facere totam sit, in culpa magni fugiat repellendus
+          atque, suscipit, amet eaque ipsa.
+        </p>
+      </div>
+      <div class="float-item">
+        <h1>Item</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          culpa quo ratione voluptate doloremque cum! Error magnam quos vel
+          provident ex ratione, quas tempora, architecto magni aperiam vitae
+          voluptatem explicabo consectetur ipsa quia deleniti dolores
+          dignissimos amet? Facere totam sit, in culpa magni fugiat repellendus
+          atque, suscipit, amet eaque ipsa.
+        </p>
+      </div>
+      <div class="float-item">
+        <h1>Item</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+          culpa quo ratione voluptate doloremque cum! Error magnam quos vel
+          provident ex ratione, quas tempora, architecto magni aperiam vitae
+          voluptatem explicabo consectetur ipsa quia deleniti dolores
+          dignissimos amet? Facere totam sit, in culpa magni fugiat repellendus
+          atque, suscipit, amet eaque ipsa.
+        </p>
+      </div>
+    </div>
+
+    <h1 class="title">Flex</h1>
+    <div class="flex-container">
+      <div class="flex-item">
+        <h1>Flex item</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          ullam enim sit cum consectetur perferendis accusantium nemo quis modi
+          impedit minus suscipit obcaecati quaerat incidunt quia,
+          necessitatibus, illo expedita. Eveniet?
+        </p>
+      </div>
+      <div class="flex-item">
+        <h1>Flex item</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          ullam enim sit cum consectetur perferendis accusantium nemo quis modi
+          impedit minus suscipit obcaecati quaerat incidunt quia,
+          necessitatibus, illo expedita. Eveniet?
+        </p>
+      </div>
+    </div>
+    <h1 class="title">Grid</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h1>Grid item</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          ullam enim sit cum consectetur perferendis accusantium nemo quis modi
+          impedit minus suscipit obcaecati quaerat incidunt quia,
+          necessitatibus, illo expedita. Eveniet?
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>Grid item</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          ullam enim sit cum consectetur perferendis accusantium nemo quis modi
+          impedit minus suscipit obcaecati quaerat incidunt quia,
+          necessitatibus, illo expedita. Eveniet?
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>Grid item</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          ullam enim sit cum consectetur perferendis accusantium nemo quis modi
+          impedit minus suscipit obcaecati quaerat incidunt quia,
+          necessitatibus, illo expedita. Eveniet?
+        </p>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      "
+    >
+      <div class="intro">Blog cua toi ne</div>
+      <div>
+        <a href="https://jameslepham.com/" title="click vao" target="_blank">
+          <img src="./img1.png" alt="cau be mo tu" style="width: 500px" />
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li style="text-transform: uppercase">duy</li>
+          <li>linh</li>
+        </ul>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <th style="color: rgba(0, 255, 0, 1)">Ten</th>
+            <th style="color: hsl(240, 100%, 50%)">phone</th>
+          </tr>
+          <tr>
+            <td>Duy</td>
+            <td>0975</td>
+          </tr>
+          <tr>
+            <td>Linh</td>
+            <td>0974</td>
+          </tr>
+        </table>
+      </div>
+      <form>
+        <div class="form-container">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="name">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Send your message here</label>
+          <textarea name="message" id="mesage" rows="4"> </textarea>
+
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
